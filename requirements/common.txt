@@ -1,0 +1,13 @@
+## Django
+django==1.9.11
+django-activity-stream==0.6.2
+django-extensions==1.6.7
+django-solo==1.1.2
+django-model-utils==2.5
+
+
+## DRF
+djangorestframework==3.5.2
+djangorestframework-jwt==1.8.0
+django-rest-raml==0.1.0
+raml-codec==0.1.2
