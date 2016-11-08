@@ -75,6 +75,17 @@ INSTALLED_APPS = [
 ## Write your first model
 ...in api.models
 
+for example:
+```
+from __future__ import unicode_literals
+
+from django.db import models
+
+
+class Author(models.Model):
+    name = models.CharField(max_length=40, blank=True, null=True)
+    age = models.IntegerField(blank=True, null=True)
+
 ## Auto generate code
 ```
 # generally the below is fine
