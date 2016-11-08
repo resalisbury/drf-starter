@@ -85,14 +85,17 @@ from django.db import models
 class Author(models.Model):
     name = models.CharField(max_length=40, blank=True, null=True)
     age = models.IntegerField(blank=True, null=True)
-
-## Auto generate code
+```
+create/run migrations
+```
+python manage.py makemigrations
+python mange.py migrate
 ```
 # generally the below is fine
 ```
 python manage.py generate api --format modelviewset
 ```
-uncomment `url(r'^api/', include('api.urls'))` to wire it all together
+uncomment `url(r'^api/', include('api.urls'))` in `website.ulrs` to wire urls together
 ```
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
