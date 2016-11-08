@@ -45,7 +45,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^raml/$', schema_view),
-    url(r'^api/', include('api.urls')),
+    # url(r'^api/', include('api.urls')),
 ]
 ```
 
@@ -91,6 +91,14 @@ class Author(models.Model):
 # generally the below is fine
 ```
 python manage.py generate api --format modelviewset
+```
+uncomment `url(r'^api/', include('api.urls'))` to wire it all together
+```
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^raml/$', schema_view),
+    # url(r'^api/', include('api.urls')),
+]
 ```
 more info: https://github.com/Brobin/drf-generators
 
