@@ -89,6 +89,7 @@ class Author(models.Model):
 ## Auto generate code
 ```
 # generally the below is fine
+```
 python manage.py generate api --format modelviewset
 ```
 more info: https://github.com/Brobin/drf-generators
